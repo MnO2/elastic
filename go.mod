@@ -1,4 +1,4 @@
-module github.com/olivere/elastic/v7
+module github.com/MnO2/elastic/v7
 
 go 1.14
 
@@ -17,4 +17,4 @@ require (
 	go.opencensus.io v0.22.5
 )
 
-replace github.com/olivere/elastic/v7 => github.com/MnO2/elastic/v7 v7.0.24
+replace github.com/olivere/elastic/v7 => github.com/MnO2/elastic/v7 v7.0.25
