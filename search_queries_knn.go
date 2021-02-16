@@ -1,7 +1,7 @@
 package elastic
 
 type KnnQuery struct {
-	vector    []float32
+	vector    []float64
 	K  		  int
 	queryName string
 }
@@ -9,12 +9,12 @@ type KnnQuery struct {
 
 func NewKnnQuery(K int) *KnnQuery {
 	return &KnnQuery{
-		vector: make([]float32, 0),
+		vector: make([]float64, 0),
 		K: K,
 	}
 }
 
-func (q *KnnQuery) Vector(v ...float32) *KnnQuery {
+func (q *KnnQuery) Vector(v ...float64) *KnnQuery {
 	q.vector = append(q.vector, v...)
 	return q
 }
