@@ -17,4 +17,4 @@ require (
 	go.opencensus.io v0.22.5
 )
 
-replace github.com/olivere/elastic/v7 v7.0.23 => github.com/MnO2/elastic/v7 v7.0.23
+replace github.com/olivere/elastic/v7 => github.com/MnO2/elastic/v7 v7.0.24
